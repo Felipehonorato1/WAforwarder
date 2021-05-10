@@ -1,5 +1,3 @@
-2021/05/10-16:30:25.175 3 Reusing MANIFEST /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Local Storage/leveldb/MANIFEST-000001
-2021/05/10-16:30:25.177 3 Recovering log #22
-2021/05/10-16:30:25.183 3 (ignoring error) /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Local Storage/leveldb/000022.log: dropping 21587 bytes; Corruption: checksum mismatch
-2021/05/10-16:30:25.227 3 (ignoring error) /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Local Storage/leveldb/000022.log: dropping 3657 bytes; Corruption: missing start of fragmented record(2)
-2021/05/10-16:30:25.227 3 Reusing old log /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Local Storage/leveldb/000022.log 
+2021/05/10-18:31:15.199 3 Reusing MANIFEST /home/felipe/Área de Trabalho/PROJECTS/WAforwarder/User_Data/Default/Local Storage/leveldb/MANIFEST-000001
+2021/05/10-18:31:15.203 3 Recovering log #3
+2021/05/10-18:31:15.204 3 Reusing old log /home/felipe/Área de Trabalho/PROJECTS/WAforwarder/User_Data/Default/Local Storage/leveldb/000003.log 

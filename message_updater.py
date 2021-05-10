@@ -1,10 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from datetime import datetime
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+import time
+
+# <span dir="auto" title="GRUPO A" class="_35k-1 _1adfa _3-8er">GRUPO A</span>
+# <span dir="auto" title="GRUPO A" class="_35k-1 _1adfa _3-8er">GRUPO A</span>
 
 
 class message:
-    def __init__(self, driver):
+    def __init__(self, driver, font_group, forward_group):
+        self.forward_group = forward_group
+        self.font_group = font_group
         self.last_message_sent = None
         self.driver = driver
         pass
@@ -12,7 +20,7 @@ class message:
     def send_message(self, message):
 
         groupB = self.driver.find_element_by_xpath(
-            f"//span[@title='GRUPO B']")
+            f"//span[@title='{self.forward_group}']")
 
         groupB.click()
         print(f'Last message: {message}')
@@ -30,10 +38,15 @@ class message:
         self.last_message_sent = message
 
     def get_last_message(self):
-        groupA = self.driver.find_element_by_xpath(
-            f"//span[@title='GRUPO A']")
+        time.sleep(1)
+        groupA = self.driver.find_elements_by_xpath(
+            f"//span[@title='{self.font_group}']")
 
-        groupA.click()
+        for element in groupA:
+            try:
+                element.click()
+            except:
+                print('Next')
 
         msg_got = self.driver.find_elements_by_css_selector(
             "span.selectable-text.copyable-text")
