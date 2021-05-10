@@ -1,0 +1,4 @@
+2021/05/10-16:30:25.340 5 Reusing MANIFEST /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Session Storage/MANIFEST-000001
+2021/05/10-16:30:25.341 5 Recovering log #3
+2021/05/10-16:30:25.341 5 (ignoring error) /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Session Storage/000003.log: dropping 17158 bytes; Corruption: checksum mismatch
+2021/05/10-16:30:25.343 5 Reusing old log /home/felipe/Área de Trabalho/PROJECTS/BOTDalia/User_Data/Default/Session Storage/000003.log 
